@@ -1,0 +1,141 @@
+<div ng-controller="myCtrl">
+
+<div class="jumbotron text-center">
+   
+    <div id="myCarousel" class="carousel slide text-center" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li  data-slide-to="0" class="active"></li>
+      <li  data-slide-to="1"></li>
+      <li  data-slide-to="2"></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner" role="listbox">
+      <div class="item active">
+        <h4>"Add Status"<br><span>Manage</span></h4>
+      </div>
+      <div class="item">
+        <h4>View"<br><span>Manage</span></h4>
+      </div>
+      <div class="item">
+        <h4>"View Status"<br><span>Graphs/Lists</span></h4>
+      </div>
+    </div>
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+</div>
+
+
+<!-- EXPENSE FORM-->
+
+
+
+
+
+
+<!-- Container (Contact Section) -->
+<div id="contact" class="container-fluid bg-grey">
+  
+    <div class="col-sm-5">
+        <h2 class="text-center">View Status</h2>
+        <div class="col-sm-12 form-group">
+              <button class="btn btn-default pull-left" ng-click="eview()">View</button>
+       </div>
+    
+          <tr ng-repeat="pgms in status" >
+                            <td style="padding-left: 10px; padding-right: 10px;"><span {{pgms.usrmail}}></span></td>
+                            <td style="padding-left: 10px; padding-right: 10px;"><span {{pgms.amount}}></span></td>
+                            
+                            
+          </tr>
+
+
+  </div>
+    <div class="col-sm-7 slideanim">
+      <h2 class="text-center">Add status</h2>
+     
+                      
+                  <br>
+                   <label for="text"> Enter Text: </label><br>
+                    <input  class="form-control" type="text" name="amount" ng-model="exp.amount" rows="5"><br>
+                     <label for="file">Upload file: </label><br>
+                     <input type = "file" file-model = "exp.myFile" name="date" />
+       
+
+  
+
+
+
+
+
+          <div class="row">
+            <div class="col-sm-12 form-group">
+              <button class="btn btn-default pull-right" ng-click="expense()">Add</button>
+            </div>
+          </div>
+       
+    </div>
+  </div>
+
+</div>
+
+
+
+<br>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+
